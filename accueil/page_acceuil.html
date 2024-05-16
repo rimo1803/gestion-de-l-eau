@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OFPPTLink</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      background-color: linear-gradient(135deg, #00cca1, #0b0a44);
+      
+            
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      right: 0;
+      left: 0;
+      background: linear-gradient(135deg, #00cca1, #0b0a44);
+      width: 100%;
+      color: white;
+      z-index: 100;
+      padding: 20px 10px;
+
+    }
+
+    .logo {
+      font-size: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #f3f5f7;
+    }
+
+    .nav a {
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #f3f5f7;
+      margin-left: 35px;
+    }
+
+    .nav a:hover,
+    .nav a:active {
+      color: #00cca1;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .search-bar input {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f3f5f7;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+      background-position: center;
+      height: 100%;
+      background: linear-gradient(135deg, #00cca1, #0b0a44);
+    }
+
+    .main .men_text {
+      height: 400px;
+      width: 400px;
+      font-size: 18;
+
+      margin-top: 250px;
+      color: white;
+    }
+
+    .main .men_text h1 span {
+      margin-left: 35px;
+      margin-top: 10px;
+      color: #0b0a44;
+      font-family: mv boli;
+      line-height: 22px;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    .main .men_text p {
+
+      color: white;
+      font-family: mv boli;
+      line-height: 22px;
+      font-size: 20px;
+    }
+
+    .main .main_image img {
+      width: 500px;
+      position: relative;
+      left: 70px;
+      margin-top: 90px;
+
+      margin-left: 70px;
+    }
+
+    @media (max-width: 1500px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav a {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .search-bar {
+        margin-top: 10px;
+      }
+
+      .search-bar input {
+        width: 100%;
+      }
+
+      .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .men_text {
+        margin-top: 130px;
+        text-align: center;
+      }
+
+      .main_image {
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .logo {
+        margin-bottom: 0;
+      }
+
+      .search-bar {
+        margin: 0;
+      }
+
+      .nav {
+        flex-direction: row;
+      }
+
+      .nav a {
+        margin-left: 35px;
+        margin-top: 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">OFPPTLink</a></h1>
+    <nav class="nav">
+      <a href="accueil.php">ACCUEIL</a>
+      <a href="profil.php">PROFIL</a>
+      <a href="ajouter.php">PUBLICATION</a>
+      <a href="chat.php">CHAT</a>
+      <a href="deconnexion.php">DECONNEXION</a>
+    </nav>
+    <form action="" method="post">
+      <div class="search-bar">
+        <input type="text" placeholder="Rechercher...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+        <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+      </div>
+    </form>
+  </header>
+
+  <div class="main">
+    <div class="men_text">
+      <h1 class="titre"><span>WatterSmart</span></h1><br><br>
+      <P class="dis">Bienvenue dans votre espace watter smart ,
+        votre environnement interactif pour la communication, la collaboration et le partage d'expériences.
+      </P>
+    </div>
+    <div class="main_image">
+      <img src="./Water drop-bro (2).svg">
+    </div>
+  </div>
+
+
+</body>
+
+</html>
